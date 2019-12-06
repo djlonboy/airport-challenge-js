@@ -16,6 +16,10 @@ describe("Plane", function() {
     expect(plane.id).toEqual(1);
   });
 
+  it("can return its type", function() {
+    expect(plane.typeOf()).toEqual("plane");
+  })
+
   it("is initialised as landed", function() {
     expect(plane.inAir).toBeFalse();
   });
